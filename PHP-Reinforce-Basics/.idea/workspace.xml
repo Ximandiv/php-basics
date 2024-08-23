@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="29ce9395-e0b8-43fd-be0b-d66b8c492fdb" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2l43SoVO4SsZkJo6X8Q8ARPjF2c" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;PHP Script.index.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHPUnit.PHP-Reinforce-Basics.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/php/php.ini&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" show_stripe_button="false" side_tool="true" />
+      <window_info id="Merge Requests" show_stripe_button="false" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" show_stripe_button="false" />
+      <window_info id="Robo tasks" show_stripe_button="false" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13984375" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" show_stripe_button="false" />
+      <window_info anchor="bottom" id="PHP-CGI Server" />
+      <window_info anchor="bottom" id="File Transfer" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.57315886" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="right" id="make" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" id="Coverage" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="RunManager" selected="PHP Script.index.php">
+    <configuration name="PHP-Reinforce-Basics" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="PHPUnit.PHP-Reinforce-Basics" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PS-242.20224.427" />
+        <option value="bundled-php-predefined-a98d8de5180a-d6acee4cb394-com.jetbrains.php.sharedIndexes-PS-242.20224.427" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29ce9395-e0b8-43fd-be0b-d66b8c492fdb" name="Changes" comment="" />
+      <created>1724425524063</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724425524063</updated>
+      <workItem from="1724425525092" duration="4262000" />
+      <workItem from="1724431938944" duration="188000" />
+      <workItem from="1724438236848" duration="643000" />
+      <workItem from="1724439189910" duration="230000" />
+      <workItem from="1724439436377" duration="951000" />
+      <workItem from="1724440425447" duration="41000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
