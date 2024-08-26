@@ -1,5 +1,9 @@
 <?php
 
+$title = 'Testing Place';
+
+$banner = 'Index';
+
 $amIAtWork = true;
 
 if($amIAtWork){
@@ -60,4 +64,4 @@ $favPeopleWDetailsList =
         ]
     ];
 
-require 'index.view.php';
+require 'Views/index.view.php';

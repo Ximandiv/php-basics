@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29ce9395-e0b8-43fd-be0b-d66b8c492fdb" name="Changes" comment="" />
+    <list default="true" id="29ce9395-e0b8-43fd-be0b-d66b8c492fdb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Views/Partials/banner.pview.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Partials/footer.pview.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Partials/head.pview.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Partials/nav.pview.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/about.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/contact.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/index.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/tailpage.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailpage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.view.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php\php.exe" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
@@ -28,23 +43,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "PHP Script.index.php.executor": "Run",
-    "PHPUnit.PHP-Reinforce-Basics.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/php/php.ini",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;PHP Script.index.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHPUnit.PHP-Reinforce-Basics.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Emmanuel/Desktop/Education/PHP Basics/PHP-Reinforce-Basics&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Bookmarks" show_stripe_button="false" side_tool="true" />
@@ -73,6 +88,14 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
     </layout>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Emmanuel\Desktop\Education\PHP Basics\PHP-Reinforce-Basics" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Emmanuel\Desktop\Education\PHP Basics\PHP-Reinforce-Basics\Views" />
+    </key>
   </component>
   <component name="RunManager" selected="PHP Script.index.php">
     <configuration name="PHP-Reinforce-Basics" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -111,6 +134,9 @@
       <workItem from="1724439189910" duration="230000" />
       <workItem from="1724439436377" duration="951000" />
       <workItem from="1724440425447" duration="41000" />
+      <workItem from="1724679462950" duration="5282000" />
+      <workItem from="1724686670262" duration="25000" />
+      <workItem from="1724686697045" duration="2345000" />
     </task>
     <servers />
   </component>
