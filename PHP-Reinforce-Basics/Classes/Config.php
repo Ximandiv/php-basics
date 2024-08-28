@@ -14,7 +14,7 @@ class Config
         $this->dbPort = '3306';
         $this->dbName = 'TestDatabase';
         $this->dbUsername = 'root';
-        $this->dbPass = '';
+        $this->dbPass = '3241oloMan';
     }
 
     public function getDBConHost(): string

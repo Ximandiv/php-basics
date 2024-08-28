@@ -11,8 +11,8 @@ $config = new Config();
 
 $dbContext = new DBContext($config);
 
-$favPeople = $dbContext->execQueryArray("SELECT * FROM Favorite_People");
+$favPeople = $dbContext->getAllFavPeople();
 
-$favPerson = $dbContext->execQuerySingle("SELECT * FROM Favorite_People WHERE ID = 1");
+$favPerson = $dbContext->getFavPersonById(1);
 
 require 'Views/database.view.php';

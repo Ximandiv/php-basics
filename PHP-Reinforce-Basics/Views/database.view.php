@@ -6,7 +6,7 @@
 
 <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <h1 class="text-3l font-bold tracking-tight text-gray-900">
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900">
             Let's see directly from the database who are my favorite people!
         </h1>
 
@@ -18,6 +18,12 @@
                 </li>
 
             <?php endforeach ?>
-        </ul>
+        </ul> <br />
+
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900">
+            Now my favorite person!
+        </h1>
+
+        <p> <?= "{$favPerson['FirstName']} {$favPerson['LastName']} - {$favPerson['Age']} years old - {$favPerson['JobTitle']}" ?> </p>
     </div>
 </main>
