@@ -1,5 +1,7 @@
 <?php
 
+require 'Classes/Response.php';
+
 // Only for debugging purposes
 function dd($value){
 
@@ -11,7 +13,8 @@ function dd($value){
 }
 
 // Applies normal nav style or current page's nav style.
-function applyNavItemStyle($url){
+function applyNavItemStyle($url): string
+{
     if(!currPageIs($url)){
         return 'rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-700 hover:text-white text-gray-300';
     }
@@ -21,6 +24,7 @@ function applyNavItemStyle($url){
     }
 }
 
-function currPageIs($url){
+function currPageIs($url): bool
+{
     return $_SERVER['REQUEST_URI'] === $url;
 }

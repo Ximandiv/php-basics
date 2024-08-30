@@ -7,14 +7,22 @@ class Config
     private string $dbName;
     private string $dbUsername;
     private string $dbPass;
-    private const string DBCHARSET = 'utf8mb4';
+    private const string CHARSET = 'utf8mb4';
 
-    public function __construct(){
-        $this->dbHost = '127.0.0.1';
-        $this->dbPort = '3306';
-        $this->dbName = 'TestDatabase';
-        $this->dbUsername = 'root';
-        $this->dbPass = '3241oloMan';
+    public function __construct($env = 'dev'){
+        if($env == 'dev') {
+            $this->dbHost = '127.0.0.1';
+            $this->dbPort = '3306';
+            $this->dbName = 'TestDatabase';
+            $this->dbUsername = 'root';
+            $this->dbPass = '';
+        } else if ($env == 'prod') {
+            $this->dbHost = 'localhost';
+            $this->dbPort = '3306';
+            $this->dbName = 'TestDatabase';
+            $this->dbUsername = 'root';
+            $this->dbPass = '';
+        }
     }
 
     public function getDBConHost(): string
@@ -44,7 +52,7 @@ class Config
 
     public function getDBCharset(): string
     {
-        return self::DBCHARSET;
+        return self::CHARSET;
     }
 
     public function getDSN(): string

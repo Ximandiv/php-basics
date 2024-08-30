@@ -25,5 +25,11 @@
         </h1>
 
         <p> <?= "{$favPerson['FirstName']} {$favPerson['LastName']} - {$favPerson['Age']} years old - {$favPerson['JobTitle']}" ?> </p>
+
+        <p class="mt-6">
+            <a href="/people/add" class="text-blue-500 hover:underline">
+                Add new Person
+            </a>
+        </p>
     </div>
 </main>

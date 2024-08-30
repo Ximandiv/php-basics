@@ -3,14 +3,17 @@
 class DBContext
 {
     private PDO $pdo;
+    private PDOStatement $statement;
 
-    public function __construct(Config $config){
+    public function __construct(){
         try{
             $options = [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                 PDO::ATTR_EMULATE_PREPARES => false
             ];
+
+            $config = new Config();
 
             $this->pdo = new PDO(
                 $config->getDSN(),
@@ -23,20 +26,23 @@ class DBContext
         }
     }
 
-    public function getAllFavPeople(): false|array
-    {
-        $stmt = $this->pdo
-                        ->prepare("SELECT FirstName, LastName, Age, JobTitle FROM Favorite_People");
-        $stmt->execute();
 
-        return $stmt->fetchAll();
+    public function fetchSingleOrMany($queryStmt, $params = [], bool $fetchMany = false): array
+    {
+        $this->prepQuery($queryStmt, $params);
+
+        $result = $fetchMany ? $this->statement->fetchAll() : $this->statement->fetch();
+
+        if (!$result) {
+            abort();
+        }
+
+        return $result;
     }
 
-    public function getFavPersonById(int $id){
-        $stmt = $this->pdo
-                        ->prepare("SELECT FirstName, LastName, Age, JobTitle FROM Favorite_People WHERE ID = ?");
-        $stmt->execute([$id]);
-
-        return $stmt->fetch();
+    private function prepQuery($queryStmt, $params = []): void
+    {
+        $this->statement = $this->pdo->prepare($queryStmt);
+        $this->statement->execute($params);
     }
 }

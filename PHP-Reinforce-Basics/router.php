@@ -1,15 +1,13 @@
 <?php
 
-$routes = [
-    '/' => 'Controllers/index.php',
-    '/testplace' => 'Controllers/testplace.php',
-    '/about' => 'Controllers/about.php',
-    '/people' => 'Controllers/database.php'
-];
+use JetBrains\PhpStorm\NoReturn;
+
+$routes = require 'routes.php';
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
-function abort($code = 404){
+#[NoReturn] function abort($code = Response::NOT_FOUND): void
+{
     http_response_code($code);
 
     require("Controllers/$code.php");
@@ -17,7 +15,8 @@ function abort($code = 404){
     die();
 }
 
-function routeToController($uri, $routes){
+function routeToController($uri, $routes): void
+{
     if (array_key_exists($uri, $routes)) {
         require $routes[$uri];
     } else {

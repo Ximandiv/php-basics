@@ -13,7 +13,7 @@ else{
     echo "If you see this, I'm not at work!";
 }
 
-function greetPerson($greet, $person)
+function greetPerson($greet, $person): string
 {
     return "{$greet()} {$person()}!";
 }
