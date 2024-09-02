@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $dbContext = new DBContext();
 
-    // Add SQL Command down here
+    $dbContext->execStmt('INSERT INTO Favorite_People (FirstName, LastName, Age, JobTitle) VALUES (:first-name, :last-name, :age, :job-title)', $cleanInput);
 }
 
 require 'Views/favPeople-add.view.php';
