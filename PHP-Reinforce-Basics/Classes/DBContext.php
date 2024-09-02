@@ -27,9 +27,9 @@ class DBContext
     }
 
 
-    public function fetchSingleOrMany($queryStmt, $params = [], bool $fetchMany = false): array
+    public function fetchSingleOrMany($queryStmt, $params = [], bool $fetchMany = false) : array
     {
-        $this->prepQuery($queryStmt, $params);
+        $this->execQuery($queryStmt, $params);
 
         $result = $fetchMany ? $this->statement->fetchAll() : $this->statement->fetch();
 
@@ -40,9 +40,9 @@ class DBContext
         return $result;
     }
 
-    private function prepQuery($queryStmt, $params = []): void
+    public function execStmt($stmt, $params = []) : void
     {
-        $this->statement = $this->pdo->prepare($queryStmt);
+        $this->statement = $this->pdo->prepare($stmt);
         $this->statement->execute($params);
     }
 }
