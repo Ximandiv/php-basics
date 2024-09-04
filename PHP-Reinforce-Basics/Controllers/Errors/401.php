@@ -4,4 +4,4 @@ $title = "Unauthorized Page";
 
 $banner = "You don't have access to this page";
 
-require 'Views/401.view.php';
+require 'Views/Errors/401.php';

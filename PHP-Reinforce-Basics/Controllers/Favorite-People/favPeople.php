@@ -13,4 +13,4 @@ $favPeople = $dbContext->fetchSingleOrMany("SELECT * FROM Favorite_People",
 $favPerson = $dbContext->fetchSingleOrMany("SELECT * FROM Favorite_People WHERE ID = :id",
                                             ['id' => 1]);
 
-require 'Views/favPeople.view.php';
+require 'Views/Favorite-People/favPeople.view.php';

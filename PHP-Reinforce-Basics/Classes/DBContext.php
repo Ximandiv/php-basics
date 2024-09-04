@@ -29,7 +29,7 @@ class DBContext
 
     public function fetchSingleOrMany($queryStmt, $params = [], bool $fetchMany = false) : array
     {
-        $this->execQuery($queryStmt, $params);
+        $this->execStmt($queryStmt, $params);
 
         $result = $fetchMany ? $this->statement->fetchAll() : $this->statement->fetch();
 

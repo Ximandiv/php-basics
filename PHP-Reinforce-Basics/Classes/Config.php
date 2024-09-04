@@ -15,7 +15,7 @@ class Config
             $this->dbPort = '3306';
             $this->dbName = 'TestDatabase';
             $this->dbUsername = 'root';
-            $this->dbPass = '';
+            $this->dbPass = '3GdhXn+0ai[1uSk1<HfJ';
         } else if ($env == 'prod') {
             $this->dbHost = 'localhost';
             $this->dbPort = '3306';
