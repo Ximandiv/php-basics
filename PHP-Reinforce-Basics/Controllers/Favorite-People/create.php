@@ -46,4 +46,4 @@ function validateReq($req) : array
     return $errorMsgs;
 }
 
-require 'Views/Favorite-People/favPeople-add.view.php';
+require 'Views/Favorite-People/create.php';
