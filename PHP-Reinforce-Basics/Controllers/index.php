@@ -1,9 +1,9 @@
 <?php
 
-$title = 'Home';
+$viewParams = [
+    'title' => 'Home',
+    'banner' => 'Home',
+    'soup' => 'soup'
+];
 
-$banner = 'Home';
-
-$soup = 'soup';
-
-require 'Views/index.view.php';
+view('index.view.php', $viewParams);

@@ -1,7 +1,8 @@
 <?php
 
-$title = 'About Us!';
+$viewParams = [
+    'title' => 'About Us!',
+    'banner' => 'About'
+];
 
-$banner = 'About';
-
-require 'Views/about.view.php';
+view('about.view.php', $viewParams);

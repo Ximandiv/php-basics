@@ -2,7 +2,7 @@
 
 use JetBrains\PhpStorm\NoReturn;
 
-$routes = require 'Routing/routes.php';
+$routes = require 'routes.php';
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
@@ -10,7 +10,7 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 {
     http_response_code($code);
 
-    require("Controllers/Errors/$code.php");
+    require(__DIR__ . "/../Controllers/Errors/$code.php");
 
     die();
 }
@@ -18,7 +18,7 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 function routeToController($uri, $routes): void
 {
     if (array_key_exists($uri, $routes)) {
-        require $routes[$uri];
+        require(__DIR__ . '/../' . $routes[$uri]);
     } else {
         abort();
     }

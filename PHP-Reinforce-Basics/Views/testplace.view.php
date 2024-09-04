@@ -15,10 +15,10 @@
             </h2> <br /> <br />
 
             <p>
-                <?= greetPerson($supGreet, $personName) ?>
+                <?= $supGreet() . ' ' . $personName() ?>
             </p> <br />
             <p>
-                <?= greetPerson($helloGreet, $world); ?>
+                <?= $helloGreet() . ' ' . $world() ?>
             </p> <br /> <br />
 
             <h2>

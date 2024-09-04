@@ -4,6 +4,7 @@ class DBContext
 {
     private PDO $pdo;
     private PDOStatement $statement;
+    private const VALID_TABLES = ['Favorite_People'];
 
     public function __construct(){
         try{
@@ -38,6 +39,16 @@ class DBContext
         }
 
         return $result;
+    }
+
+    public function getTableCount($tableName)
+    {
+        if(!in_array($tableName, self::VALID_TABLES)) {
+            abort();
+        }
+
+        $this->execStmt("SELECT COUNT(*) FROM " . $tableName);
+        return $this->statement->fetchColumn();
     }
 
     public function execStmt($stmt, $params = []) : void

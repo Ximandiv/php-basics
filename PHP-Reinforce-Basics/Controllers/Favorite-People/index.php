@@ -1,16 +1,21 @@
 <?php
 
-$title = 'Epic DB Title';
-
-$banner = 'Favorite People';
-
 $dbContext = new DBContext();
+
+$favPeopleCount = $dbContext->getTableCount('Favorite_People');
 
 $favPeople = $dbContext->fetchSingleOrMany("SELECT * FROM Favorite_People",
                                             [],
                                             true);
 
 $favPerson = $dbContext->fetchSingleOrMany("SELECT * FROM Favorite_People WHERE ID = :id",
-                                            ['id' => 1]);
+                                            ['id' => mt_rand(1, $favPeopleCount)]);
 
-require 'Views/Favorite-People/index.php';
+$viewParams = [
+    'title' => 'Favorite People',
+    'banner' => 'Favorite People',
+    'favPeople' => $favPeople,
+    'favPerson' => $favPerson
+];
+
+view('Favorite-People/index.view.php', $viewParams);

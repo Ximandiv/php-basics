@@ -28,3 +28,14 @@ function currPageIs($url): bool
 {
     return $_SERVER['REQUEST_URI'] === $url;
 }
+
+function base_path($path): string
+{
+    return BASE_PATH . $path;
+}
+
+function view($path, $params = []): void
+{
+    extract($params);
+    require base_path('Views/' . $path);
+}

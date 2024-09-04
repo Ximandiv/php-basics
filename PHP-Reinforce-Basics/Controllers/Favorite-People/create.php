@@ -1,10 +1,6 @@
 <?php
 
-require 'Classes/Validator.php';
-
-$title = 'Epic DB Title';
-
-$banner = 'Favorite People';
+require BASE_PATH . 'Classes/Validator.php';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $cleanReq = [];
@@ -46,4 +42,10 @@ function validateReq($req) : array
     return $errorMsgs;
 }
 
-require 'Views/Favorite-People/create.php';
+$viewParams = [
+    'title' => 'Favorite People',
+    'banner' => 'Favorite People Epic Form',
+    'errorMsgs' => $errorMsgs ?? []
+];
+
+view('Favorite-People/create.view.php', $viewParams);
