@@ -17,7 +17,7 @@
                         <a href="/about" class="<?= applyNavItemStyle('/about') ?>">
                             About
                         </a>
-                        <a href="/people" class="<?= applyNavItemStyle('/people') ?>">
+                        <a href="/people/list" class="<?= applyNavItemStyle('/people/list') ?>">
                             People
                         </a>
                     </div>

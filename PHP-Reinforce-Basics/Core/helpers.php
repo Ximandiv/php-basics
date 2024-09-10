@@ -1,6 +1,6 @@
 <?php
 
-require 'Classes/Response.php';
+require base_path('/Core/Response.php');
 
 // Only for debugging purposes
 function dd($value){
@@ -37,5 +37,11 @@ function base_path($path): string
 function view($path, $params = []): void
 {
     extract($params);
-    require base_path('Views/' . $path);
+    require base_path('/Views/' . $path);
+}
+
+function controller($path, $params = []): void
+{
+    extract($params);
+    require base_path('/Controllers/' . $path);
 }

@@ -1,10 +1,16 @@
 <?php
 
+namespace Core;
+
+use PDO;
+use PDOException;
+use PDOStatement;
+
 class DBContext
 {
     private PDO $pdo;
     private PDOStatement $statement;
-    private const VALID_TABLES = ['Favorite_People'];
+    private const array VALID_TABLES = ['Favorite_People'];
 
     public function __construct(){
         try{
@@ -41,14 +47,14 @@ class DBContext
         return $result;
     }
 
-    public function getTableCount($tableName)
+    public function getTableIds($tableName) : array
     {
         if(!in_array($tableName, self::VALID_TABLES)) {
             abort();
         }
 
-        $this->execStmt("SELECT COUNT(*) FROM " . $tableName);
-        return $this->statement->fetchColumn();
+        $this->execStmt("SELECT ID FROM " . $tableName);
+        return $this->statement->fetchAll();
     }
 
     public function execStmt($stmt, $params = []) : void

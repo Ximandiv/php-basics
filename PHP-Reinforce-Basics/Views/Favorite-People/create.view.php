@@ -1,8 +1,8 @@
-<?php require __DIR__ . '/../Partials/head.pview.php'; ?>
+<?php require base_path('/Views/Partials/head.pview.php'); ?>
 
-<?php require  __DIR__ . '/../Partials/nav.pview.php'; ?>
+<?php require base_path('/Views/Partials/nav.pview.php'); ?>
 
-<?php require  __DIR__ . '/../Partials/banner.pview.php' ?>
+<?php require base_path('/Views/Partials/banner.pview.php'); ?>
 
 <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
@@ -11,6 +11,7 @@
         </h1>
 
         <form method="POST">
+            <input type="hidden" name="csrf-token" value="<?= $token ?>" />
             <div class="space-y-12">
                 <div class="border-gray-900/10">
                     <p class="mt-1 text-sm leading-6 text-gray-600">This information will be displayed publicly so be careful what you share.</p>
@@ -99,16 +100,42 @@
                                 <?php endif; ?>
                             </div>
                         </div>
+
+                        <div class="sm:col-span-3">
+                            <label for="about" class="block text-sm font-medium leading-6 text-gray-900">About</label>
+                            <div class="mt-2">
+                                <textarea
+                                        name="about"
+                                        rows="3"
+                                        id="about"
+                                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        required
+                                > <?= $_POST['about'] ?? '' ?> </textarea>
+
+                                <?php if(isset($errorMsgs['about'])) : ?>
+
+                                    <p class="text-red-500 text-xs mt-2"><?= $errorMsgs['about'] ?></p>
+
+                                <?php endif; ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="mt-6 flex items-center justify-end gap-x-6">
-                <a href="/people" class="text-sm font-semibold leading-6 text-gray-900">Cancel</a>
+                <a href="/people/list" class="text-sm font-semibold leading-6 text-gray-900">Cancel</a>
                 <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Save</button>
             </div>
+
+            <?php if(isset($errorMsgs['csrf-token'])) : ?>
+                <div class="flex items-center justify-end">
+                    <p class="text-red-500 text-xs mt-2"><?= $errorMsgs['csrf-token'] ?></p>
+                </div>
+
+            <?php endif; ?>
         </form>
     </div>
 </main>
 
-<?php require( __DIR__ . '/../Partials/footer.pview.php') ?>
+<?php require base_path('/Views/Partials/footer.pview.php') ?>

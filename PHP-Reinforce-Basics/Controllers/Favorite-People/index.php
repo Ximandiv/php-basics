@@ -1,15 +1,21 @@
 <?php
 
+use Core\DBContext;
+
 $dbContext = new DBContext();
 
-$favPeopleCount = $dbContext->getTableCount('Favorite_People');
+$allFavPeople = $dbContext->getTableIds('Favorite_People');
+
+#Selects all IDs from the multi-array then selects a random index to display the value as a "Random Selected Person"
+$allFavPeopleIds = array_column($allFavPeople, 'ID');
+$randomPersonId = $allFavPeopleIds[array_rand($allFavPeopleIds)];
 
 $favPeople = $dbContext->fetchSingleOrMany("SELECT * FROM Favorite_People",
                                             [],
                                             true);
 
 $favPerson = $dbContext->fetchSingleOrMany("SELECT * FROM Favorite_People WHERE ID = :id",
-                                            ['id' => mt_rand(1, $favPeopleCount)]);
+                                            ['id' => $randomPersonId]);
 
 $viewParams = [
     'title' => 'Favorite People',
